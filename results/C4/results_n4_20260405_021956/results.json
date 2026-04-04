@@ -1,0 +1,58 @@
+{
+  "Adagrad": {
+    "1": {
+      "final_energy": 2.96,
+      "converged": false
+    },
+    "2": {
+      "final_energy": 3.98,
+      "converged": true
+    },
+    "3": {
+      "final_energy": 3.98,
+      "converged": true
+    }
+  },
+  "Adam": {
+    "1": {
+      "final_energy": 2.8200000000000003,
+      "converged": false
+    },
+    "2": {
+      "final_energy": 3.98,
+      "converged": true
+    },
+    "3": {
+      "final_energy": 4.0,
+      "converged": true
+    }
+  },
+  "GradientDescent": {
+    "1": {
+      "final_energy": 3.0,
+      "converged": false
+    },
+    "2": {
+      "final_energy": 3.5,
+      "converged": false
+    },
+    "3": {
+      "final_energy": 3.5,
+      "converged": false
+    }
+  },
+  "COBYLA": {
+    "1": {
+      "final_energy": 2.8,
+      "converged": false
+    },
+    "2": {
+      "final_energy": 4.0,
+      "converged": true
+    },
+    "3": {
+      "final_energy": 4.0,
+      "converged": true
+    }
+  }
+}
