@@ -392,7 +392,7 @@ def compare_optimizers(max_extra_layers=1, base_iters=40, min_iters=15):
     # Maximum p to check = theoretical + extra layers
     max_p_to_check = p_theoretical + max_extra_layers
     print(f"\n Checking p from 1 to {max_p_to_check}")
-    print(f"⚙️ Adaptive iterations: p=1-3 → {get_adaptive_num_iters(1)}, "
+    print(f"Adaptive iterations: p=1-3 → {get_adaptive_num_iters(1)}, "
           f"p=4-5 → {get_adaptive_num_iters(4)}, p≥6 → {get_adaptive_num_iters(6)}")
     
     fig, axes = plt.subplots(2, 2, figsize=(10, 8))
