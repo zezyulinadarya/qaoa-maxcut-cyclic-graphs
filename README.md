@@ -20,7 +20,7 @@ QAOA for MaxCut on cyclic graphs | Testing the hypothesis that convergence requi
 <img width="2580" height="840" alt="qaoa_circuit_p1" src="https://github.com/user-attachments/assets/900fe146-59ff-4d87-b3dc-e4fc0c6b5215" />
 
 
-### 2. Инициализация квантового состояния
+#### Инициализация квантового состояния
 
 `for i in range(n):`
     `qml.Hadamard(wires=i)`
@@ -30,7 +30,7 @@ QAOA for MaxCut on cyclic graphs | Testing the hypothesis that convergence requi
 ```math
 H|0\rangle = \frac{|0\rangle + |1\rangle}{\sqrt{2}} = |+\rangle
 ```
-В результате для системы из \( n \) получается состояние \[|\psi_0\rangle\], представляющее собой равномерную суперпозицию всех \( 2^n \) битовых строк: 
+В результате для системы из n кубитов получается состояние ```math \psi_0\rangle\ ````, представляющее собой равномерную суперпозицию всех \( 2^n \) битовых строк: 
 
 ```math
 |\psi_0\rangle = H^{\otimes n} |0\rangle^{\otimes n} = \frac{1}{\sqrt{2^n}} \sum_{x \in \{0,1\}^n} |x\rangle
