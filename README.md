@@ -52,4 +52,6 @@ H|0\rangle = \frac{|0\rangle + |1\rangle}{\sqrt{2}} = |+\rangle
 Благодаря интерференции, вероятность получить хорошее решение значительно выше, чем при случайном угадывании. 
 
 Анзац для p слоёв будет иметь следующий вид:
-```math |\psi(\boldsymbol{\gamma},\boldsymbol{\beta})\rangle = \prod_{k=1}^p U_B(\beta_k) U_C(\gamma_k) |+\rangle^{\otimes n}```
+```math
+|\psi(\boldsymbol{\gamma},\boldsymbol{\beta})\rangle = \prod_{k=1}^p U_B(\beta_k) U_C(\gamma_k) |+\rangle^{\otimes n}
+```
