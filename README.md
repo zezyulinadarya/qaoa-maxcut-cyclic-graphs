@@ -30,7 +30,7 @@ QAOA for MaxCut on cyclic graphs | Testing the hypothesis that convergence requi
 ```math
 H|0\rangle = \frac{|0\rangle + |1\rangle}{\sqrt{2}} = |+\rangle
 ```
-В результате для системы из n кубитов получается состояние ```math \psi_0\rangle\ ````, представляющее собой равномерную суперпозицию всех \( 2^n \) битовых строк: 
+В результате для системы из n кубитов получается состояние |\psi_0\rangle, представляющее собой равномерную суперпозицию всех \( 2^n \) битовых строк: 
 
 ```math
 |\psi_0\rangle = H^{\otimes n} |0\rangle^{\otimes n} = \frac{1}{\sqrt{2^n}} \sum_{x \in \{0,1\}^n} |x\rangle
