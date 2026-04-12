@@ -59,14 +59,14 @@ H|0\rangle = \frac{|0\rangle + |1\rangle}{\sqrt{2}} = |+\rangle
 ```math
 U(\gamma, \mathcal{H}_C) = \prod_{(i,j)} e^{-i\pi\gamma Z^{(i)}Z^{(j)}}
 ```
-где вариационный параметр $`\boldsymbol{\gamma} = (\gamma_1, \dots, \gamma_p)`$ играет роль времени эволюции.  
+где вариационный вектор параметров $`\boldsymbol{\gamma} = (\gamma_1, \dots, \gamma_p)`$ играет роль времени эволюции.  
 
 Смешивающий слой строится из операторов Паули X:
 
 ```math
 U(\beta, B) = \prod_{j=1}^n e^{i\pi\beta X^{(j)}}
 ```
-со вторым вариационным параметров параметром $\boldsymbol{\beta} = (\beta_1, \dots, \beta_p)`$.  
+со вторым вектором параметров $\boldsymbol{\beta} = (\beta_1, \dots, \beta_p)`$.  
 
 Эти два слоя поочерёдно повторяются p раз, образуя полный анзац  
 
