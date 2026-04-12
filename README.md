@@ -1,4 +1,4 @@
-# qaoa-maxcut-cyclic-graphs
+# QAOA for MaxCut on Cyclic Graphs
 QAOA for MaxCut on cyclic graphs | Testing the hypothesis that convergence requires n/2 layers | Comparison of 4 optimizers (Adagrad, Adam, GD, COBYLA)
 
 # Описание 
@@ -57,7 +57,7 @@ H|0\rangle = \frac{|0\rangle + |1\rangle}{\sqrt{2}} = |+\rangle
 Ключевой элемент QAOA — построение параметризованной квантовой схемы на основе двух гамильтонианов - целевого (cost Hamiltonian) и смешивающего (mixer Hamiltonian). Целевой гамильтониан $`ℋ_C`$ кодирует решаемую задачу: его основное состояние (с минимальной энергией) соответствует искомому оптимальному решению и представляется оператором эволюции вида:
 
 ```math
-U(\gamma, \mathcal{H}_C) = \prod_{(i,j)} e^{-i\pi\gamma Z^{(i)}Z^{(j)}}
+U(\gamma, \mathcal{H}_C) = \prod_{(i,j)} e^{-i\gamma Z^{(i)}Z^{(j)}}
 ```
 где вариационный вектор параметров $`\boldsymbol{\gamma} = (\gamma_1, \dots, \gamma_p)`$ играет роль времени эволюции.  
 Данный слой представлен последовательностью следующих гейтов: `CNOT(i,j) → RZ(γ, j) → CNOT(i,j)`  
@@ -66,7 +66,7 @@ U(\gamma, \mathcal{H}_C) = \prod_{(i,j)} e^{-i\pi\gamma Z^{(i)}Z^{(j)}}
 Смешивающий слой строится из операторов Паули X:
 
 ```math
-U(\beta, B) = \prod_{j=1}^n e^{i\pi\beta X^{(j)}}
+U(\beta, B) = \prod_{j=1}^n e^{i\beta X^{(j)}}
 ```
 со вторым вектором параметров $\boldsymbol{\beta} = (\beta_1, \dots, \beta_p)`$.  
 
